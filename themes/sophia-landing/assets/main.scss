@@ -1,3 +1,42 @@
 body {
-  background-color: red;
+  margin: 0;
+}
+#wpadminbar {
+  box-sizing: content-box !important;
+}
+.background-wrapper {
+  position: relative;
+  height: 100vh;
+  background-image: url('sofia.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.centered-content {
+  text-align: center;
+  color: #ffffff; // Assuming white text, but adjust as needed
+  font-size: 1.5rem; // Adjust as needed
+  // padding: 0 20px; // add horizontal padding for mobile
+  
+  @media (min-width: 481px) { // Larger than mobile
+    padding: 0; // reset to no padding
+  }
+
+  a {
+    color: #ffffff; // Assuming white links, but adjust as needed
+    text-decoration: underline; // Styling choice, adjust as needed
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
