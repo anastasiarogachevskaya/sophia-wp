@@ -25,6 +25,8 @@ services:
        WORDPRESS_DB_USER: wordpress
        WORDPRESS_DB_PASSWORD: wordpress
        WORDPRESS_DB_NAME: wordpress
+     volumes:
+       - ./themes/sophia-landing:/var/www/html/wp-content/themes/sophia-landing
 
 volumes:
     db_data: {}
