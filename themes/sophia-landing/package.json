@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "sass": "^1.68.0",
+    "vite-plugin-copy": "^0.1.6",
     "vite-plugin-sass": "^0.1.0"
   }
 }

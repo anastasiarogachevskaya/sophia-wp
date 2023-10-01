@@ -7,7 +7,7 @@ body {
 .background-wrapper {
   position: relative;
   height: 100vh;
-  background-image: url('sofia.jpeg');
+  background-image: url('/wp-content/themes/sophia-landing/assets/sofia.jpeg'); // Absolute path
   background-size: cover;
   background-position: center;
   display: flex;
@@ -20,7 +20,7 @@ body {
   text-align: center;
   color: #ffffff; // Assuming white text, but adjust as needed
   font-size: 1.5rem; // Adjust as needed
-  // padding: 0 20px; // add horizontal padding for mobile
+  padding: 0 20px; // add horizontal padding for mobile
   
   @media (min-width: 481px) { // Larger than mobile
     padding: 0; // reset to no padding

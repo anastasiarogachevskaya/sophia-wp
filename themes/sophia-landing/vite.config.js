@@ -1,11 +1,14 @@
 // vite.config.js
-import ViteSass from 'vite-plugin-sass';
-
 export default {
-  plugins: [ViteSass()],
   build: {
     rollupOptions: {
       input: './assets/main.js', // Replace with the correct path
-    }
+      output: {
+        entryFileNames: `[name].js`,
+        chunkFileNames: `[name].js`,
+        assetFileNames: `[name].[ext]`
+      },
+    },
+    cssCodeSplit: true, // enable CSS code-splitting
   }
 }
