@@ -8,6 +8,8 @@ function redirect_all_to_front_page() {
 add_action('template_redirect', 'redirect_all_to_front_page');
 
 function sophia_landing_enqueue_scripts() {
+    wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
     // Check if we're in development mode
     // For testing purposes, always enqueue from Vite's server
     wp_enqueue_script('sophia-landing-main-js', 'http://localhost:5173/assets/main.js', array(), null, true);
