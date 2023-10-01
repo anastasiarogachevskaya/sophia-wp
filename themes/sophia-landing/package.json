@@ -1,0 +1,21 @@
+{
+  "name": "sophia-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.4.9"
+  },
+  "devDependencies": {
+    "sass": "^1.68.0"
+  }
+}
